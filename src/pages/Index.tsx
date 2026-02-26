@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import SEOHead from "@/components/SEOHead";
 import {
   Phone, ArrowRight, Shield, Award, Wrench, DollarSign,
   Star, ChevronRight, Layers, Grid3X3, Fence, GlassWater, DoorOpen, Maximize
@@ -42,6 +43,11 @@ const Index = () => {
 
   return (
     <>
+      <SEOHead
+        title="Premium Aluminium & Glass Solutions in Hyderabad"
+        description="Creative Glass & Aluminium offers premium aluminium fabrication, UPVC doors & windows, glass partitions, railings and fabrication works in Hyderabad, Rangareddy."
+        path="/"
+      />
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div
@@ -140,7 +146,7 @@ const Index = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {projectImages.map((img, i) => (
               <div key={i} className="group relative overflow-hidden rounded-xl aspect-[4/3] animate-on-scroll">
-                <img src={img} alt={`Project ${i + 1}`} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+                <img src={img} alt={`Aluminium and glass fabrication project ${i + 1} by Creative Glass Hyderabad`} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             ))}

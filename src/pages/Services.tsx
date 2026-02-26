@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight, Maximize, DoorOpen, GlassWater, Fence,
@@ -80,6 +81,11 @@ const Services = () => {
 
   return (
     <>
+      <SEOHead
+        title="Our Services - Aluminium, Glass & UPVC Solutions"
+        description="Explore our services: aluminium windows, UPVC doors, toughened glass partitions, SS railings, glass lighting, and custom fabrication works in Hyderabad."
+        path="/services"
+      />
       <section className="relative pt-32 pb-16 gradient-dark">
         <div className="container-main px-4 md:px-8 text-center">
           <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-4">Our Services</h1>
