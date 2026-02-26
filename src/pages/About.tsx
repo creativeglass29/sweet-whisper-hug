@@ -1,4 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import SEOHead from "@/components/SEOHead";
 import { Target, Eye, CheckCircle, Users } from "lucide-react";
 
 const About = () => {
@@ -6,6 +7,11 @@ const About = () => {
 
   return (
     <>
+      <SEOHead
+        title="About Us - Our Story & Commitment"
+        description="Learn about Creative Glass & Aluminium - our mission, vision, years of expertise in aluminium fabrication and glass work in Hyderabad, Rangareddy."
+        path="/about"
+      />
       <section className="relative pt-32 pb-16 gradient-dark">
         <div className="container-main px-4 md:px-8 text-center">
           <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-4">About Us</h1>

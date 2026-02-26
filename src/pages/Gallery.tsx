@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import SEOHead from "@/components/SEOHead";
 import { X } from "lucide-react";
 
 const categories = ["All", "Windows", "Doors", "Railings", "Partitions"];
@@ -28,7 +29,11 @@ const Gallery = () => {
 
   return (
     <>
-      {/* Hero */}
+      <SEOHead
+        title="Project Gallery - Aluminium & Glass Works"
+        description="Browse our portfolio of premium aluminium windows, UPVC doors, glass partitions, SS railings and fabrication projects in Hyderabad."
+        path="/gallery"
+      />
       <section className="relative pt-32 pb-16 gradient-dark">
         <div className="container-main px-4 md:px-8 text-center">
           <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-4">Our Gallery</h1>

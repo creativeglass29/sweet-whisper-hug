@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -13,12 +14,35 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast({ title: "Message Sent!", description: "We'll get back to you within 24 hours." });
+    
+    const name = form.name.trim().slice(0, 100);
+    const phone = form.phone.trim().slice(0, 20);
+    const email = form.email.trim().slice(0, 255);
+    const message = form.message.trim().slice(0, 1000);
+
+    if (!name || !phone || !message) {
+      toast({ title: "Please fill all required fields", variant: "destructive" });
+      return;
+    }
+
+    const subject = encodeURIComponent(`Enquiry from ${name} - Creative Glass Website`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nPhone: ${phone}\nEmail: ${email || "Not provided"}\n\nMessage:\n${message}`
+    );
+    
+    window.location.href = `mailto:creativeglass88@gmail.com?subject=${subject}&body=${body}`;
+    
+    toast({ title: "Opening your email client!", description: "Send the pre-filled email to complete your enquiry." });
     setForm({ name: "", phone: "", email: "", message: "" });
   };
 
   return (
     <>
+      <SEOHead
+        title="Contact Us - Get a Free Quote"
+        description="Contact Creative Glass & Aluminium for aluminium windows, UPVC doors, glass partitions and fabrication works. Call +91 91009 11580 or email us."
+        path="/contact"
+      />
       <section className="relative pt-32 pb-16 gradient-dark">
         <div className="container-main px-4 md:px-8 text-center">
           <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-4">Contact Us</h1>
