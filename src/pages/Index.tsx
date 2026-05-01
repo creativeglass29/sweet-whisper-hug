@@ -204,7 +204,7 @@ const Index = () => {
               </Button>
             </Link>
             <a href="tel:+919100911580">
-              <Button size="lg" variant="outline" className="rounded-full gap-2 px-8 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+              <Button size="lg" className="rounded-full gap-2 px-8 bg-foreground text-primary-foreground hover:bg-foreground/90">
                 <Phone className="w-4 h-4" /> +91 91009 11580
               </Button>
             </a>
