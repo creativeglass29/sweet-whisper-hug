@@ -63,9 +63,9 @@ const Footer = () => {
                 <Phone className="w-4 h-4 mt-0.5 shrink-0" />
                 <span>+91 91009 11580<br />+91 62812 18946</span>
               </a>
-              <a href="mailto:creativeglass88@gmail.com" className="flex items-start gap-2 hover:text-primary-foreground transition-colors">
+              <a href="mailto:creativeglass880@gmail.com" className="flex items-start gap-2 hover:text-primary-foreground transition-colors">
                 <Mail className="w-4 h-4 mt-0.5 shrink-0" />
-                creativeglass88@gmail.com
+                creativeglass880@gmail.com
               </a>
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
