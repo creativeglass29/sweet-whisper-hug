@@ -30,7 +30,7 @@ const Contact = () => {
       `Name: ${name}\nPhone: ${phone}\nEmail: ${email || "Not provided"}\n\nMessage:\n${message}`
     );
     
-    window.location.href = `mailto:creativeglass88@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:creativeglass880@gmail.com?subject=${subject}&body=${body}`;
     
     toast({ title: "Opening your email client!", description: "Send the pre-filled email to complete your enquiry." });
     setForm({ name: "", phone: "", email: "", message: "" });
@@ -106,11 +106,11 @@ const Contact = () => {
                       <p className="text-muted-foreground">+91 62812 18946</p>
                     </div>
                   </a>
-                  <a href="mailto:creativeglass88@gmail.com" className="flex items-start gap-3 text-sm hover:text-primary transition-colors">
+                  <a href="mailto:creativeglass880@gmail.com" className="flex items-start gap-3 text-sm hover:text-primary transition-colors">
                     <Mail className="w-5 h-5 text-primary mt-0.5 shrink-0" />
                     <div>
                       <p className="font-medium text-foreground">Email</p>
-                      <p className="text-muted-foreground">creativeglass88@gmail.com</p>
+                      <p className="text-muted-foreground">creativeglass880@gmail.com</p>
                     </div>
                   </a>
                   <div className="flex items-start gap-3 text-sm">
